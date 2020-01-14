@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tow ME</title>
+    </head>
+        <body>
+            <h1>Welcome to Kobina Towing Company</h1>
+        <h2>{{headline}}</h2>
+        {% if new_year %}
+        <h1>Yes! Happy New Year</h1>
+        {% else %}
+        <h1>No!</h1>
+            {% endif %}
+
+            {% for name in names %}
+                <li>{{name}}</li>
+            {% endfor %}
+
+       <div>
+           <p>
+               <h1>First Page</h1>
+               Free flight from florida to france
+           </p>
+            <a href="{{url_for('contactus')}}">Contact Us</a>
+       </div>
+        </body>
+</html>
